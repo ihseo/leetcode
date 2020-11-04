@@ -15,7 +15,7 @@ class Solution:
             if v > 0:
                 for _ in range(count_dict[letter]):
                     answer.append(letter)
-                count_dict[letter] -= 1
+                count_dict[letter] = 0
 
         return ''.join(answer)
 
